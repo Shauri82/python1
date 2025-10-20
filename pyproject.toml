@@ -1,0 +1,19 @@
+[project]
+name = "python1"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Anna Orlowska",email = "some@email.com"}
+]
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "requests (>=2.32.5,<3.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "python1", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
